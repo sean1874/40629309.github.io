@@ -1,0 +1,161 @@
+h1{
+    font-size: 25px;
+    font-family:"sans-serif";
+    text-align: center;
+    margin: 50px;
+    transform: translateX(10%);
+
+}
+
+i{
+    font-size: 10px;
+
+}
+p{
+    font-size: 20PX;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: #000000;
+}
+
+ul{
+    text-align: left;
+    list-style-type: circle;
+    list-style-position: outside;
+    transform: translateX(30%);
+    padding: 20px;
+    margin-right: 400px;
+    
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Style for the sidebar */
+.sidebar {
+    background-image: linear-gradient(rgb(88, 225, 230), red);
+    color: #000000;
+    height: 100vh; /* Make the sidebar height equal to the viewport height */
+    padding: 50px;
+    margin-right:10px;
+    box-sizing: border-box;
+    width: 20%;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+/*style the images*/
+.img{
+    width: 200px;
+    height: 100px;
+    position: relative;
+}
+
+/* Style for the table */
+.home_table {
+    margin: 50px 0 0 20%;
+    width: 80%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 1.2em;
+}
+
+.home_th {
+    background-color: #333;
+    color: #fff;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #fff;
+}
+
+.home_td {
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    position: relative;
+}
+
+.home_tr:nth-child(even) {
+    background-color: #333;
+    color: #fff;
+}
+
+.tooltip::before,
+.tooltip::after{
+    --scale:0;
+    --tooltip-color:rgb(26, 193, 199);
+    --arrow-size:10px;
+    
+
+    position: absolute;
+    top: -.25rem;
+    left: 50%;
+    transform: translateX(-50%) translateY(var(--translate-y, 0)) scale(var(--scale));
+    transition: 150ms transform;
+    transform-origin: bottom center;
+}
+.tooltip::before{
+    --translate-y: calc(-100% - var(--arrow-size));
+    content: attr(data-tooltip);
+    color: #fff;
+    padding: .5rem;
+    background:var(--tooltip-color);
+    width: max-content;
+    max-width: 100%;
+    border-radius: .3rem;
+    text-align: center;
+
+}
+
+.tooltip:hover::before,
+.tooltip:hover::after{
+    --scale:1;
+}
+
+.tooltip::after{
+
+    --translate-y: calc(-1 * var(--arrow-size));
+
+    content: ' ';
+    border:var(--arrow-size) solid transparent;
+    border-top-color:var(--tooltip-color);
+    transform-origin: top center;
+    
+}
+
+.img2{
+    width: 400px;
+    height: 200px;
+    position: relative;
+}
+
+.recipe_table{
+
+    margin: 50px 0 0 20%;
+    width: 80%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 1.2em;
+    
+}
+
+.recipe_th{
+    color: #000000;
+    font-weight: bold;
+    padding: 50px;
+    text-align: center;
+    border: 1px transparent;
+    
+}
+
+
+.video{
+    text-align: center;
+    transform: translateX(10%)
+}
